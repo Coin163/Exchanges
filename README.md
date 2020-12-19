@@ -38,8 +38,7 @@ Call: https://api.coin163.org/v1/ticker/eth_usdt,get current tick data
 Required parameters: market
 
 Call: https://api.coin163.org/v1/orders/eth_usdt/5 ,get order book data
-```
-{"success":true,"result":{"buy":[{"price":"143.000000000000","amount":"5.000000000000","timestamp":"1585903106"},{"price":"143.250000000000","amount":"1.000000000000","timestamp":"1585903363"},{"price":"143.000000000000","amount":"5.000000000000","timestamp":"1586008718"},{"price":"143.000000000000","amount":"0.100000000000","timestamp":"1586009019"}],"sell":[{"price":"143.250000000000","amount":"1.000000000000","timestamp":"1586002565"}]}}
+```{"success":true,"result":{"buy":[{"price":"143.000000000000","amount":"5.000000000000","timestamp":"1585903106"},{"price":"143.250000000000","amount":"1.000000000000","timestamp":"1585903363"},{"price":"143.000000000000","amount":"5.000000000000","timestamp":"1586008718"},{"price":"143.000000000000","amount":"0.100000000000","timestamp":"1586009019"}],"sell":[{"price":"143.250000000000","amount":"1.000000000000","timestamp":"1586002565"}]}}
 ```			
 Required parameters: market, count (max: 100)
 
