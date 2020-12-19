@@ -34,22 +34,32 @@ It will be returns last 24h trade data. Sample output:
 Call: https://api.coin163.org/v1/ticker/eth_usdt ,get current tick data
 ```
 {"success":true,"result":{"volume":754,"high":"172.330000000000","low":"155.740000000000","average":4.932997347480105,"open":"155.740000000000","price":161.71652173913043,"timestamp":1594140778}}
-```		
+```
+
 Required parameters: market
 
 Call: https://api.coin163.org/v1/orders/eth_usdt/500  ,get order book data
 ```
-{"success":true,"result":{"buy":[{"price":"669.980200000000","amount":"13.000000000000","timestamp":"1608346929"},{"price":"669.107800000000","amount":"13.000000000000","timestamp":"1608346474"},{"price":"671.731800000000","amount":"10.000000000000","timestamp":"1608345492"},{"price":"668.225500000000","amount":"13.000000000000","timestamp":"1608346964"},{"price":"669.107800000000","amount":"15.000000000000","timestamp":"1608347312"},{"price":"667.369900000000","amount":"13.000000000000","timestamp":"1608346671"},{"price":"667.153300000000","amount":"9.000000000000","timestamp":"1608347303"},{"price":"668.949500000000","amount":"9.000000000000","timestamp":"1608345504"},{"price":"667.598100000000","amount":"16.000000000000","timestamp":"1608345438"}
-]}```
+{"success":true,"result":{"buy":[{"price":"669.980200000000","amount":"13.000000000000","timestamp":"1608346929"},{"price":"669.107800000000","amount":"13.000000000000","timestamp":"1608346474"},{"price":"671.731800000000","amount":"10.000000000000","timestamp":"1608345492"},{"price":"668.225500000000","amount":"13.000000000000","timestamp":"1608346964"},{"price":"669.107800000000","amount":"15.000000000000","timestamp":"1608347312"},{"price":"667.369900000000","amount":"13.000000000000","timestamp":"1608346671"},{"price":"667.153300000000","amount":"9.000000000000","timestamp":"1608347303"},{"price":"668.949500000000","amount":"9.000000000000","timestamp":"1608345504"},{"price":"667.598100000000","amount":"16.000000000000","timestamp":"1608345438"},{"price":"667.598100000000","amount":"6.000000000000","timestamp":"1608346355"},{"price":"665.605800000000","amount":"1.000000000000","timestamp":"1608345474"},{"price":"670.578400000000","amount":"8.000000000000","timestamp":"1608345798"},{"price":"665.748700000000","amount":"12.000000000000","timestamp":"1608346413"},{"price":"665.402000000000","amount":"15.000000000000","timestamp":"1608346791"},{"price":"670.372000000000","amount":"5.000000000000","timestamp":"1608346332"}]}}
+```
+
 Required parameters: market, count (max: 100)
 
-Call: https://api.coin163.org/v1/history/eth_usdt/5  ,get history transactions data
-```{"success":true,"result":[{"price":"143.000000000000","amount":"5.000000000000","total":715,"type":"buy","timestamp":"1585903106"},{"price":"143.250000000000","amount":"1.000000000000","total":143.25,"type":"buy","timestamp":"1585903363"},{"price":"143.250000000000","amount":"1.000000000000","total":143.25,"type":"sell","timestamp":"1586002565"},{"price":"143.000000000000","amount":"5.000000000000","total":715,"type":"buy","timestamp":"1586008718"},{"price":"143.000000000000","amount":"0.100000000000","total":14.3,"type":"buy","timestamp":"1586009019"}]}
-```			
-Required parameters: market, count (max: 200)
+Call: https://api.coin163.org/v1/history/eth_usdt/500 ,get history transactions data
+```
+{"success":true,"result":[{"price":"669.980200000000","amount":"13.000000000000","total":8709.7426,"type":"buy","timestamp":"1608346929"},{"price":"666.564600000000","amount":"10.119000000000","total":6744.9671874000005,"type":"sell","timestamp":"1608346700"},{"price":"669.107800000000","amount":"13.000000000000","total":8698.4014,"type":"buy","timestamp":"1608346474"},{"price":"665.536500000000","amount":"12.115000000000","total":8062.974697500001,"type":"sell","timestamp":"1608345505"},{"price":"671.731800000000","amount":"10.000000000000","total":6717.318,"type":"buy","timestamp":"1608345492"}]}}
+```
 
-Call: https://api.coin163.org/v1/chart/eth_usdt/5 ,get candles historical trades data
-```{"success":true,"result":[{"price":"155.740000000000","amount":"38.000000000000","total":5918.120000000001,"type":"sell","timestamp":"1593615529"},{"price":"158.110000000000","amount":"59.000000000000","total":9328.490000000002,"type":"buy","timestamp":"1593615529"},{"price":"160.480000000000","amount":"47.000000000000","total":7542.5599999999995,"type":"sell","timestamp":"1593615529"}]}
-```		
+Required parameters: market, count (max: 500)
+
+Call: https://api.coin163.org/v1/chart/eth_usdt/500 ,get candles historical trades data
+
+```
+{"success":true,"result":[{"price":"669.980200000000","amount":"13.000000000000","total":8709.7426,"type":"buy","timestamp":"1608346929"},{"price":"666.564600000000","amount":"10.119000000000","total":6744.9671874000005,"type":"sell","timestamp":"1608346700"},{"price":"669.107800000000","amount":"13.000000000000","total":8698.4014,"type":"buy","timestamp":"1608346474"},{"price":"665.536500000000","amount":"12.115000000000","total":8062.974697500001,"type":"sell","timestamp":"1608345505"},{"price":"671.731800000000","amount":"10.000000000000","total":6717.318,"type":"buy","timestamp":"1608345492"},{"price":"665.468600000000","amount":"16.144000000000","total":10743.3250784,"type":"sell","timestamp":"1608347187"},{"price":"668.225500000000","amount":"13.000000000000","total":8686.9315,"type":"buy","timestamp":"1608346964"}]}}
+```
+
+
+
+
 
 			
