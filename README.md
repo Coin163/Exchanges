@@ -37,18 +37,18 @@ Call: https://api.coin163.org/v1/ticker/eth_usdt,get current tick data
 ```		
 Required parameters: market
 
-Call: https://api.coin163.org/v1/orders/eth_usdt/5,get order book data
+Call: https://api.coin163.org/v1/orders/eth_usdt/5 ,get order book data
 ```
 {"success":true,"result":{"buy":[{"price":"143.000000000000","amount":"5.000000000000","timestamp":"1585903106"},{"price":"143.250000000000","amount":"1.000000000000","timestamp":"1585903363"},{"price":"143.000000000000","amount":"5.000000000000","timestamp":"1586008718"},{"price":"143.000000000000","amount":"0.100000000000","timestamp":"1586009019"}],"sell":[{"price":"143.250000000000","amount":"1.000000000000","timestamp":"1586002565"}]}}
 ```			
 Required parameters: market, count (max: 100)
 
-Call: https://api.coin163.org/v1/history/eth_usdt/5,get history transactions data
+Call: https://api.coin163.org/v1/history/eth_usdt/5  ,get history transactions data
 ```{"success":true,"result":[{"price":"143.000000000000","amount":"5.000000000000","total":715,"type":"buy","timestamp":"1585903106"},{"price":"143.250000000000","amount":"1.000000000000","total":143.25,"type":"buy","timestamp":"1585903363"},{"price":"143.250000000000","amount":"1.000000000000","total":143.25,"type":"sell","timestamp":"1586002565"},{"price":"143.000000000000","amount":"5.000000000000","total":715,"type":"buy","timestamp":"1586008718"},{"price":"143.000000000000","amount":"0.100000000000","total":14.3,"type":"buy","timestamp":"1586009019"}]}
 ```			
 Required parameters: market, count (max: 200)
 
-Call: https://api.coin163.org/v1/chart/eth_usdt/5,get candles historical trades data
+Call: https://api.coin163.org/v1/chart/eth_usdt/5 ,get candles historical trades data
 ```{"success":true,"result":[{"price":"155.740000000000","amount":"38.000000000000","total":5918.120000000001,"type":"sell","timestamp":"1593615529"},{"price":"158.110000000000","amount":"59.000000000000","total":9328.490000000002,"type":"buy","timestamp":"1593615529"},{"price":"160.480000000000","amount":"47.000000000000","total":7542.5599999999995,"type":"sell","timestamp":"1593615529"}]}
 ```		
 
