@@ -50,7 +50,9 @@ Call: https://api.coin163.org/v1/history/eth_usdt/500 ,get history transactions 
 {"success":true,"result":[{"price":"669.980200000000","amount":"13.000000000000","total":8709.7426,"type":"buy","timestamp":"1608346929"},{"price":"666.564600000000","amount":"10.119000000000","total":6744.9671874000005,"type":"sell","timestamp":"1608346700"},{"price":"669.107800000000","amount":"13.000000000000","total":8698.4014,"type":"buy","timestamp":"1608346474"},{"price":"665.536500000000","amount":"12.115000000000","total":8062.974697500001,"type":"sell","timestamp":"1608345505"},{"price":"671.731800000000","amount":"10.000000000000","total":6717.318,"type":"buy","timestamp":"1608345492"}]}}
 ```
 
-Required parameters: market, count (max: 500)
+
+
+Required parameters: market, count (max: 10080)
 
 Call: https://api.coin163.org/v1/chart/eth_usdt/500 ,get candles historical trades data
 
