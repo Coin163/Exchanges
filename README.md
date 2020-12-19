@@ -16,7 +16,9 @@ $output = json_decode($output,true);
 return $output;
 
 It will be returns last 24h trade data. Sample output:
+```
 {"success":true,"result":[{"market":"ETH_USDT","currency":"ETH","base":"USDT","volume":"3719.480000000000","high":"172.330000000000","low":"155.740000000000","average":"161.7165217391304348","timestamp":1594139374}]}
+```
 			
 
 			
