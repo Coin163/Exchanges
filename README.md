@@ -43,7 +43,7 @@ Call: https://api.coin163.org/v1/orders/eth_usdt/500  ,get order book data
 {"success":true,"result":{"buy":[{"price":"669.980200000000","amount":"13.000000000000","timestamp":"1608346929"},{"price":"669.107800000000","amount":"13.000000000000","timestamp":"1608346474"},{"price":"671.731800000000","amount":"10.000000000000","timestamp":"1608345492"},{"price":"668.225500000000","amount":"13.000000000000","timestamp":"1608346964"},{"price":"669.107800000000","amount":"15.000000000000","timestamp":"1608347312"},{"price":"667.369900000000","amount":"13.000000000000","timestamp":"1608346671"},{"price":"667.153300000000","amount":"9.000000000000","timestamp":"1608347303"},{"price":"668.949500000000","amount":"9.000000000000","timestamp":"1608345504"},{"price":"667.598100000000","amount":"16.000000000000","timestamp":"1608345438"},{"price":"667.598100000000","amount":"6.000000000000","timestamp":"1608346355"},{"price":"665.605800000000","amount":"1.000000000000","timestamp":"1608345474"},{"price":"670.578400000000","amount":"8.000000000000","timestamp":"1608345798"},{"price":"665.748700000000","amount":"12.000000000000","timestamp":"1608346413"},{"price":"665.402000000000","amount":"15.000000000000","timestamp":"1608346791"},{"price":"670.372000000000","amount":"5.000000000000","timestamp":"1608346332"}]}}
 ```
 
-Required parameters: market, count (max: 100)
+Required parameters: market, count (max: 500)
 
 Call: https://api.coin163.org/v1/history/eth_usdt/500 ,get history transactions data
 ```
