@@ -52,7 +52,7 @@ Call: https://api.coin163.org/v1/history/eth_usdt/500 ,get history transactions 
 
 
 
-Required parameters: market, count (max: 10080)
+Required parameters: market, count (max: 10080) Parameter value range (5, 15, 30, 60, 360, 720, 1440, 10080)
 
 Call: https://api.coin163.org/v1/chart/eth_usdt/500 ,get candles historical trades data
 
