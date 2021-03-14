@@ -36,17 +36,13 @@ It will be returns last 24h trade data. Sample output:
 ```
 {"success":true,"result":[{"market":"LINK_ETH","currency":"LINK","base":"ETH","volume":"8092.696000000000","high":"0.021654800000","low":"0.020729210000","price":"0.021567180000","average":"0.021567180000","percent":0.04274294844561007,"timestamp":1608347747,"url": "https://www.coin163.org/auction/exchange/LINK-ETH.html"},{"market":"LINK_USDT","currency":"LINK","base":"USDT","volume":"79436.762000000000","high":"14.117698210000","low":"13.446719510000","price":"14.018644130000","average":"14.018644130000","percent":0.047527485714684424,"timestamp":1608347747,"url": "https://www.coin163.org/auction/exchange/LINK-USDT.html"}]}
 ```
-
-Get All Trade Pairs
-Return all the trading pairs supported by Coin163 Market
-Call:http://api.coin163.org/v1/market/pairs
+Call:http://api.coin163.org/v1/market/pairs ,Get All Trade Pairs
+Return all the trading pairs supported by Coin163 Market. Sample output:
 ```
 {"success":true,"result":{"status":1,"message":"Success","combinations":[{"target":"LINK","base":"ETH","ticker_id":"LINK-ETH"},{"target":"LINK","base":"USDT","ticker_id":"LINK-USDT"},{"target":"OMG","base":"BTC","ticker_id":"OMG-BTC"}]}}
 ```
-
-Get 24 Hours Trade Details
-Return all the trade analytics in Coin163 Market
-Call:http://api.coin163.org/v1/market/tickers
+Call:http://api.coin163.org/v1/market/tickers ,Get 24 Hours Trade Details
+Return all the trade analytics in Coin163 Market. Sample output:
 ```
 {"success":true,"result":[{"ticker_id":"LINK_ETH","url":"https:\/\/www.coin163.org\/auction\/exchange\/LINK-ETH.html","target_currency":"LINK","base_currency":"ETH","base_volume":"6623.647000000000","high":"0.016371840000","low":"0.015549560000","bid":"0.015693090000","ask":"0.015721350000","last_price":"0.016177850000"}]}
 ```
