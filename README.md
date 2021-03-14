@@ -40,7 +40,9 @@ It will be returns last 24h trade data. Sample output:
 Get All Trade Pairs
 Return all the Information about selected Asset
 Call:http://api.coin163.org/v1/market/pairs
+```
 {"success":true,"result":{"status":1,"message":"Success","combinations":[{"target":"LINK","base":"ETH","ticker_id":"LINK-ETH"},{"target":"LINK","base":"USDT","ticker_id":"LINK-USDT"},{"target":"OMG","base":"BTC","ticker_id":"OMG-BTC"}]}}
+```
 
 Call: https://api.coin163.org/v1/ticker/eth_usdt ,get current tick data
 ```
