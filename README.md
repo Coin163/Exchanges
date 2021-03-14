@@ -31,23 +31,23 @@ GET,https://api.coin163.org/v1/market/info
 {"success":true,"result":{"name":"Coin163","description":"Coin163 is a cryptocurrency exchange located in Vietnam. The most active trading pair on Coin163 exchange is ETH\/BTC. Coin163 is delivering the most reliable, fast and powerful platform solution on the market.It is established in year 2019.","location":"Vietnam","logo":"https:\/\/www.coin163.org\/Public\/Home\/images\/logo-200.png","website":"https:\/\/www.coin163.org","twitter":"https:\/\/twitter.com\/Coin163Org","telegram":"https:\/\/t.me\/Coin163_Community","email":"support@coin163.org"}}
 ```
 
-Call: https://api.coin163.org/v1/market/lists ,get current market data
+Call: https://api.coin163.org/v1/market/lists ,get current market data;
 It will be returns last 24h trade data. Sample output:
 ```
 {"success":true,"result":[{"market":"LINK_ETH","currency":"LINK","base":"ETH","volume":"8092.696000000000","high":"0.021654800000","low":"0.020729210000","price":"0.021567180000","average":"0.021567180000","percent":0.04274294844561007,"timestamp":1608347747,"url": "https://www.coin163.org/auction/exchange/LINK-ETH.html"},{"market":"LINK_USDT","currency":"LINK","base":"USDT","volume":"79436.762000000000","high":"14.117698210000","low":"13.446719510000","price":"14.018644130000","average":"14.018644130000","percent":0.047527485714684424,"timestamp":1608347747,"url": "https://www.coin163.org/auction/exchange/LINK-USDT.html"}]}
 ```
-Call:http://api.coin163.org/v1/market/pairs ,Get All Trade Pairs
+Call:http://api.coin163.org/v1/market/pairs ,Get All Trade Pairs;
 Return all the trading pairs supported by Coin163 Market. Sample output:
 ```
 {"success":true,"result":{"status":1,"message":"Success","combinations":[{"target":"LINK","base":"ETH","ticker_id":"LINK-ETH"},{"target":"LINK","base":"USDT","ticker_id":"LINK-USDT"},{"target":"OMG","base":"BTC","ticker_id":"OMG-BTC"}]}}
 ```
-Call:http://api.coin163.org/v1/market/tickers ,Get 24 Hours Trade Details
+Call:http://api.coin163.org/v1/market/tickers ,Get 24 Hours Trade Details;
 Return all the trade analytics in Coin163 Market. Sample output:
 ```
 {"success":true,"result":[{"ticker_id":"LINK_ETH","url":"https:\/\/www.coin163.org\/auction\/exchange\/LINK-ETH.html","target_currency":"LINK","base_currency":"ETH","base_volume":"6623.647000000000","high":"0.016371840000","low":"0.015549560000","bid":"0.015693090000","ask":"0.015721350000","last_price":"0.016177850000"}]}
 ```
 
-Call:http://api.coin163.org/v1/market/orderbook/ticker_id/LINK_ETH/depth/10 ,order book information with depth
+Call:http://api.coin163.org/v1/market/orderbook/ticker_id/LINK_ETH/depth/10 ,Get order book information with depth;
 returned for a given market pair/ticker by Coin163 Market. Sample output:
 ```
 {"success":true,"result":{"bids":[{"price":"0.015729770000","num":"3.176000000000"},{"price":"0.015755740000","num":"8.840000000000"},{"price":"0.015687530000","num":"18.123000000000"},{"price":"0.015732350000","num":"1.880000000000"},{"price":"0.015807990000","num":"11.830000000000"},{"price":"0.015841270000","num":"15.182000000000"},{"price":"0.015793890000","num":"15.620000000000"},{"price":"0.015685960000","num":"8.199000000000"},{"price":"0.015818260000","num":"17.131000000000"},{"price":"0.015759050000","num":"0.125000000000"}],"ask":[{"price":"0.015781150000","num":"1.000000000000"},{"price":"0.015765970000","num":"14.000000000000"},{"price":"0.015694140000","num":"5.000000000000"},{"price":"0.015697650000","num":"8.000000000000"},{"price":"0.015823690000","num":"16.000000000000"},{"price":"0.015732350000","num":"1.000000000000"},{"price":"0.015711240000","num":"7.000000000000"},{"price":"0.015713370000","num":"3.000000000000"},{"price":"0.015813030000","num":"10.000000000000"},{"price":"0.015717770000","num":"18.000000000000"}],"timestamp":1615735925,"ticker_id":"LINK_ETH"}}
