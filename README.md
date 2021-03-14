@@ -44,6 +44,14 @@ Call:http://api.coin163.org/v1/market/pairs
 {"success":true,"result":{"status":1,"message":"Success","combinations":[{"target":"LINK","base":"ETH","ticker_id":"LINK-ETH"},{"target":"LINK","base":"USDT","ticker_id":"LINK-USDT"},{"target":"OMG","base":"BTC","ticker_id":"OMG-BTC"}]}}
 ```
 
+Get 24 Hours Trade Details
+Return all the trade analytics in Coin163 Market
+Call:http://api.coin163.org/v1/market/tickers
+```
+{"success":true,"result":[{"ticker_id":"LINK_ETH","url":"https:\/\/www.coin163.org\/auction\/exchange\/LINK-ETH.html","target_currency":"LINK","base_currency":"ETH","base_volume":"6623.647000000000","high":"0.016371840000","low":"0.015549560000","bid":"0.015693090000","ask":"0.015721350000","last_price":"0.016177850000"}]}
+```
+
+
 Call: https://api.coin163.org/v1/ticker/eth_usdt ,get current tick data
 ```
 {"success":true,"result":{"volume":754,"high":"172.330000000000","low":"155.740000000000","average":4.932997347480105,"open":"155.740000000000","price":161.71652173913043,"timestamp":1594140778}}
